@@ -3,6 +3,16 @@
 }
 
 .gallery-image {
+    background: #fff;
+    display: inline-block;
+    height: 284px;
+    width: 284px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.gallery-image-container {
     padding: 8px;
     background: #fff;
     border-radius: 2px;
