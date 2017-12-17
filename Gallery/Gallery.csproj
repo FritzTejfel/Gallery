@@ -18,6 +18,11 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Gallery.Data\Gallery.Data.csproj" />
+    <ProjectReference Include="..\Gallery.Services\Gallery.Services.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\images\" />
   </ItemGroup>
 
 </Project>
