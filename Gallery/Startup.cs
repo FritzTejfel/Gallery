@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Gallery.Data;
+﻿using Gallery.Data;
+using Gallery.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -27,6 +24,7 @@ namespace Gallery
                 opt => opt.UseSqlServer(Configuration
                 .GetConnectionString("DefaultConnection")));
 
+            services.AddScoped<IImage, ImageService>();
             services.AddMvc();
         }
 
